@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/image/fundo.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    z-index: -1; /* Coloca a camada atrás do conteúdo */
+    pointer-events: none; /* Permite interação com o conteúdo */
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+}
+
+.name-highlight {
+    border: px solid; /* Define uma borda de 2px e estilo sólido */
+    border-color: aqua; /* Aplica a cor da borda */
+    color: white;
+    padding: 3px 3px;
+    border-radius: 5px; /* Opcional, para deixar os cantos arredondados */
+    display: inline-block; /* Garantir que o fundo cubra apenas o texto */
+}
+
+.text-center {
+    text-align: center; /* Centraliza o conteúdo do h2 */
+}
+
+.border-project-title {
+    color: white; /* Cor do texto */
+    display: inline-block; /* Faz o fundo se ajustar ao tamanho do texto */
+    padding: 5px 10px; /* Adiciona um pequeno espaço ao redor do texto */
+    border-radius: 5px;
+}
+
+.border-aqua {
+    border: 2px solid aqua; /* Define a borda de 2px com a cor aqua */
+}
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Mantém a animação de hover para os ícones sociais */
+    box-shadow: 0px 5px 15px rgba(2, 230, 247, 0.5);
+}
+
+
+.tech-icons-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.tech-icons img {
+    height: 40px;
+}
+
+.tech-title {
+    color: aqua;
+}
+
+.card {
+    border-radius: 15px;
+    border-color: aqua;
+}
+
+.projects .card {
+    border-radius: 10px;
+    border: 1px solid rgb(7, 117, 136);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona sombra na transição */
+}
+
+.projects .card:hover {
+    transform: scale(1.05);
+    border: 1px solid aqua;
+    box-shadow: 0px 5px 15px rgba(2, 230, 247, 0.5); /* Sombra ao passar o mouse */
+}
+
+.card-img-top {
+    height: 330px ;
+    object-fit: cover;
+}
+
+.card-body {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-outline-light {
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.btn-outline-light:hover {
+    background-color: #444; /* Cor de fundo no hover */
+    color: aqua; /* Cor do texto no hover */
+    border-color: aqua; /* Cor da borda no hover */
+}
+
+.btn-project {
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #444;
+    color: aqua;
+    border-color: aqua;
+}
+
+.download-cv-btn {
+    background-color: #2d2f31;
+    color: white;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-cv-btn i {
+    margin-left: 5px;
+}
+
+.download-cv-btn:hover {
+    background-color: #444;
+    color: aqua;
+}
+
+.cards-container {
+    margin: 0 -2rem; /* Ajuste o valor (-2rem) para controlar o espaçamento */
+}
+
+
+/* CSS do carrossel de ícones (isolado) */
+.carousel-icons-wrapper {
+    overflow: hidden; /* Mantém oculto o que está fora da área visível */
+    width: 100%; /* Garante que o wrapper ocupe a largura total */
+    display: flex;
+    justify-content: flex-start; /* Inicia os ícones à direita */
+}
+
+.carousel-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre ícones */
+    white-space: nowrap; /* Garante que os ícones não quebrem linha */
+    transition: none; /* Remove qualquer transição que possa interferir */
+}
+
+.carousel-icons img {
+    height: 40px;
+    flex-shrink: 0; /* Garante que os ícones não encolham */
+}
+
+
