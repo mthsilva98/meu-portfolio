@@ -1,3 +1,3 @@
 # Meu primeiro portfólio
 
-## As tecnologias usadas foram: javascript, css3, html5 e figma.
+## As tecnologias usadas foram: Javascript, Bootstrap, CSS3, HTML5 e Figma.
